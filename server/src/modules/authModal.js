@@ -1,7 +1,13 @@
 import { Schema, model } from "mongoose";
 
 const authSchema = new Schema({
-  full_name: {
+  first_name: {
+    type: String,
+  },
+  last_name: {
+    type: String,
+  },
+  username: {
     type: String,
   },
   email: {
@@ -17,6 +23,12 @@ const authSchema = new Schema({
   is_verify: {
     type: Boolean,
     default: false,
+  },
+  token: {
+    type: String,
+  },
+  expire_time: {
+    type: String,
   },
   profile: {
     type: String,

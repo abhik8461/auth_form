@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thank You for Registering</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 30px auto;
+      background-color: #ffffff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    img {
+      width: 25%;
+      /* Make the image fill its container */
+      height: auto;
+      /* Maintain aspect ratio */
+      max-width: 100%;
+      /* Ensure the image doesn't exceed its natural size */
+    }
+
+    h2 {
+      color: #333333;
+    }
+
+    h3 {
+      color: #555555;
+    }
+
+    p {
+      color: #555555;
+      line-height: 1.6;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      margin: 20px 0;
+      text-decoration: none;
+      background-color: #4caf50;
+      color: #ffffff;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+
+    .footer {
+      margin-top: 20px;
+      font-size: 12px;
+      color: #888888;
+    }
+
+    @media only screen and (max-width: 600px) {
+      .container {
+        padding: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img
+      src="https://ds9xi3hub5xxi.cloudfront.net/cdn/farfuture/otEn1mSO8Tk3mLVPFxYMCMwRn-qtie_ueonsviYMy0w/mtime:1608563955/sites/default/files/nodeicon/plugins_email-verification-plugin.png"
+      alt="Email Verification Image">
+    <h2>Hi,<%=msg.first_name%>
+        <%=msg.last_name%>
+    </h2>
+    <h3>This is your registration link</h3>
+    <p>We are excited to welcome you to our community. Your registration was successful, and we look forward to
+      providing you with a great experience.</p>
+    <br>
+    <p>Please click the button below to activate your account</p>
+    <a href="<%=url%>" class="btn">Activate your account</a>
+    <p class="footer">If you have any questions or need assistance, feel free to contact our support team at
+      support@example.com.</p>
+  </div>
+</body>
+</html>
